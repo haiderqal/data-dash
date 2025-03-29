@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [stores, setStores] = useState([]);
@@ -33,27 +34,25 @@ function App() {
   const storeTypes = [...new Set(stores.map((s) => s.store_type))];
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">📱 Cellphone Stores Dashboard</h1>
+    <div className="container">
+      <h1>📱 Cellphone Stores Dashboard</h1>
 
       {/* Summary Stats */}
-      <div className="mb-4">
+      <div className="stats">
         <p>Total Stores: {totalStores}</p>
         <p>Types of Stores: {storeTypes.length}</p>
         <p>Currently Displayed: {filteredStores.length}</p>
       </div>
 
       {/* Search & Filter */}
-      <div className="mb-4 flex gap-2">
+      <div className="controls">
         <input
           type="text"
           placeholder="Search by store name..."
-          className="border p-2 rounded"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <select
-          className="border p-2 rounded"
           value={filterType}
           onChange={(e) => setFilterType(e.target.value)}
         >
@@ -69,11 +68,8 @@ function App() {
       {/* Store List */}
       <ul>
         {filteredStores.slice(0, 10).map((store) => (
-          <li
-            key={store.id}
-            className="border p-3 mb-2 rounded shadow-sm hover:bg-gray-100"
-          >
-            <p className="font-semibold">{store.name}</p>
+          <li key={store.id}>
+            <p>{store.name}</p>
             <p>Type: {store.store_type}</p>
           </li>
         ))}

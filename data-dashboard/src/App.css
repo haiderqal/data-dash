@@ -1,91 +1,53 @@
 /* Root Container */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #6c6c83;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
   text-align: center;
-  background-color: #f8fafc;
-  min-height: 100vh;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  color: #0f172a;
+  letter-spacing: 1px;
 }
 
-/* Header Logo */
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 1em #3b82f6aa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-/* Card Styling */
-.card {
-  background: #ffffff;
-  padding: 1.5em;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin: 1em auto;
-  max-width: 600px;
-  transition: transform 0.2s, background 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.02);
-  background-color: #e0f2fe;
-}
-
-/* Read Docs Style */
-.read-the-docs {
-  color: #64748b;
-  font-size: 0.9rem;
-  margin-top: 1em;
-}
-
-/* Custom for your dashboard */
+/* Stats Section */
 .stats {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .stats p {
-  background-color: #e0f2fe;
-  padding: 10px 16px;
-  border-radius: 8px;
-  color: #0369a1;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 12px 18px;
+  border-radius: 10px;
   font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Controls Section */
 .controls {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 input,
 select {
-  padding: 10px;
-  border: 1px solid #cbd5e1;
+  padding: 12px;
+  border: 2px solid #cbd5e1;
   border-radius: 8px;
   font-size: 1rem;
   min-width: 200px;
@@ -98,30 +60,30 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
+/* Store List */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  background: #f1f5f9;
-  margin: 10px auto;
+  background: #457bb1;
+  margin-bottom: 16px;
   padding: 16px;
-  border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: 0.2s;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, background 0.2s;
 }
 
 li:hover {
-  background-color: #dbeafe;
-  transform: scale(1.01);
+  background-color: #e0f2fe;
+  transform: scale(1.02);
 }
 
 li p:first-child {
-  font-weight: bold;
-  margin-bottom: 4px;
+  font-weight: 700;
   color: #0f172a;
+  margin-bottom: 6px;
 }
 
 li p:last-child {
