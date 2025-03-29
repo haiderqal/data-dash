@@ -1,0 +1,102 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #1e293b;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  color: #0f172a;
+  letter-spacing: 1px;
+}
+
+/* Summary Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stats p {
+  background-color: #e0f2fe;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin: 8px 0;
+  font-weight: 600;
+  color: #0369a1;
+}
+
+/* Search & Filter */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 200px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Store List */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f8fafc;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, background 0.2s;
+}
+
+li:hover {
+  background-color: #e0f2fe;
+  transform: scale(1.02);
+}
+
+li p:first-child {
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+li p:last-child {
+  color: #475569;
+}
