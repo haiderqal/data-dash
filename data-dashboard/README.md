@@ -63,7 +63,7 @@ The following additional features are implemented:
 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src="./web102datav1.gif" title="Video Walkthrough" width="600" alt="Video Walkthrough" />
+<img src="./web102datav2.gif" title="Video Walkthrough" width="600" alt="Video Walkthrough" />
 GIF created with LiceCAP
 
 Notes
