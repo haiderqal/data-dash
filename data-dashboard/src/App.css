@@ -3,7 +3,7 @@
   max-width: 900px;
   margin: 40px auto;
   padding: 24px;
-  background: #6c6c83;
+  background: #e7bf8b;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -87,5 +87,5 @@ li p:first-child {
 }
 
 li p:last-child {
-  color: #475569;
+  color: #cfe0f8;
 }
